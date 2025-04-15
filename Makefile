@@ -59,6 +59,13 @@ destroy-tf-backend-cf-stack:
 	--stack-name $(TF_S3_BACKEND_NAME) \
 	--region $(AWS_SECONDARY_REGION)
 
+#################### Terraform Cache Clean-up ####################
+
+clean-tf-cache:
+	@echo "Removing Terraform caches in iac/roots/."
+	find . -type d -name ".terraform" -exec rm -rf {} +
+	@echo "Complete"
+
 #################### KMS Keys ####################
 
 deploy-kms-keys:
