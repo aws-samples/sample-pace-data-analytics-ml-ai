@@ -5,10 +5,10 @@ terraform {
 
   backend "s3" {
 
-    bucket         = "###TF_S3_BACKEND_NAME###-###AWS_ACCOUNT_ID###-###AWS_PRIMARY_REGION###"
-    key            = "###ENV_NAME###/dz-domain/terraform.tfstate"
-    dynamodb_table = "###TF_S3_BACKEND_NAME###-lock"
-    region         = "###AWS_PRIMARY_REGION###"
-    encrypt        = true
+    bucket       = "###TF_S3_BACKEND_NAME###-###AWS_ACCOUNT_ID###-###AWS_PRIMARY_REGION###"
+    key          = "###ENV_NAME###/dz-domain/terraform.tfstate"
+    use_lockfile = true
+    region       = "###AWS_PRIMARY_REGION###"
+    encrypt      = true
   }
 }
