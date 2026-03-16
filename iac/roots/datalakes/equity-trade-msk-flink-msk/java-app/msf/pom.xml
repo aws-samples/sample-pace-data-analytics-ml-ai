@@ -12,7 +12,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <flink.version>1.20.0</flink.version>
-        <log4j.version>2.24.0</log4j.version>
+        <log4j.version>2.25.3</log4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
        <kda.runtime.version>1.2.0</kda.runtime.version>
        <kafka.connector.version>3.1.0-1.18</kafka.connector.version>
